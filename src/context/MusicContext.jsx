@@ -1,5 +1,5 @@
 // npm run dev
-// フォルダ: context/
+// フォルダ: src/context/MusicContext.jsx
 
 import React, { createContext, useContext, useReducer } from "react";
 
@@ -371,8 +371,9 @@ const shuffleArray = (array) => {
   return shuffled;
 };
 
-// Context作成
+// Context作成（エクスポート追加）
 const MusicContext = createContext();
+export { MusicContext };
 
 // Provider コンポーネント
 export const MusicProvider = ({ children }) => {
